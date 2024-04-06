@@ -6,7 +6,7 @@ function displayTime(){
     let date = new Date();
     // const stringdate = date.toISOString()
     // console.log(new Date(stringdate))
-
+ 
     
 
     // Getting hour, mins, secs from date
