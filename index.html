@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Website HTML and CSS | Coding Nepal</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts Links For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@24;400&display=swap">
+</head>
+<style>
+    .shadow-text {
+        /* font-size: 306px; */
+        color: #fff;
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
+    }
+</style>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Coffee with Yash<span>.</span></a>
+            <ul class="menu-links">
+                <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+            <span id="menu-btn" class="material-symbols-outlined">menu</span>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="content">
+            <h1 class="shadow-text">Start Your Day With Fresh Coffee</h1>
+            <p class="shadow-text">
+                Coffee is a popular and beloved beverage enjoyed by people around the world.
+                Awaken your senses with a steaming cup of liquid motivation.
+            </p>
+            <button>Order Now</button>
+        </div>
+    </section>
+
+    <script>
+        const header = document.querySelector("header");
+        const menuBtn = document.querySelector("#menu-btn");
+        const closeMenuBtn = document.querySelector("#close-menu-btn");
+        const menuLinks = document.querySelector('.menu-links');
+
+        menuBtn.addEventListener("click", () => {
+            header.classList.add("show-mobile-menu");
+        });
+
+        closeMenuBtn.addEventListener("click", () => {
+            header.classList.remove("show-mobile-menu");
+        });
+    </script>
+</body>
+</html>
